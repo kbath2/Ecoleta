@@ -1,0 +1,44 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #dadaf9;
+}
+
+#page-home {
+    background: url(/src/img/home-background.svg) no-repeat;
+    background-position: 35vw bottom;
+    height: 100vh;
+}
+
+#page-home header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+#page-home header a {
+    color: #322153;
+    display: flex;
+    font-weight: 700;
+}
+
+#page-home header a span {
+    background-image: url(/src/img/log-in.svg);
+    display: flex;
+    margin-right: 16px;
+    height: 20px;
+    width: 20px;
+}
+
+#page-home .content {
+    margin: 0 auto;
+    max-width: 1100%;
+    width: 90%;
+}
