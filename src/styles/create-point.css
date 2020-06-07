@@ -105,3 +105,40 @@ form button {
 form button:hover {
     background-color: #2fb86e;
 }
+
+
+/* CSS da lista de itens */
+
+.items-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.items-grid li {
+    align-items: center;
+    background-color: #ebebfd;
+    border: 2px solid #ebebfd;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 32px 24px 16px;
+    text-align: center;
+}
+
+.items-grid li span {
+    align-items: center;
+    color: var(--title-color);
+    display: flex;
+    flex: 1;
+    margin-top: 12px;
+}
+
+.items-grid li.selected {
+    background: #c1f7d9;
+    border: 2px solid #34cb79;
+}
