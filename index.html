@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/src/styles/main.css">
         <link rel="stylesheet" href="/src/styles/home.css">
+        <link rel="stylesheet" href="/src/styles/modal.css">
         <link rel="stylesheet" href="/src/styles/responsive.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
         <title>Ecoleta</title>
@@ -32,8 +33,8 @@
             </div>
         </div>
 
-        <div id="modal">
-            <div class="contente">
+        <div id="modal" class="hide">
+            <div class="content">
                 <div class="header">
                     <h1>Pontos de Coleta</h1>
                     <a href="">Fechar</a>
@@ -41,7 +42,7 @@
                 <form action="">
                     <label for="search">Cidade</label>
                     <div class="search field">
-                        <input type="text" name="search">
+                        <input type="text" name="search" placeholder="Pesquise por Cidade">
                         <button>
                             <img src="/src/img/search.svg" alt="Buscar">
                         </button>
