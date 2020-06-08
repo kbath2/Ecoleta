@@ -1,0 +1,26 @@
+{
+    "name": "Ecoleta",
+    "version": "1.0.0",
+    "description": "Sistema de cadastro de coletas de materias reutilizaveis",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kbath2/Ecoleta.git"
+    },
+    "keywords": [],
+    "author": "Anderson Santana",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kbath2/Ecoleta/issues"
+    },
+    "homepage": "https://github.com/kbath2/Ecoleta#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}

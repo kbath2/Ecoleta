@@ -30,7 +30,7 @@ body::after {
 }
 
 #page-search-results header a span {
-    background-image: url(/src/img/arrow-left.svg);
+    background-image: url(/img/arrow-left.svg);
     display: flex;
     height: 21px;
     margin-right: 10px;
