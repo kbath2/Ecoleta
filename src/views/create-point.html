@@ -20,10 +20,19 @@
             <h2>Dados da entidade</h2>
         </legend>
 
-        <div class="field">
-            <label for="name">Nome da entidade</label>
-            <input type="text" name="name" required>
+        <div class="field-group">
+            <div class="field">
+                <label for="name">Nome da entidade</label>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="field">
+                <label for="name">Imagem da entidade</label>
+                <input type="url" name="image" placeholder="https://" required>
+            </div>
+
         </div>
+
 
         <div class="field-group">
             <div class="field">
@@ -47,7 +56,7 @@
             <div class="field">
                 <label for="city">Cidade</label>
                 <select name="city" disabled required>
-                              <option value="">Selecione a Cidade</option>
+                            <option value="">Selecione a Cidade</option>
                             </select>
             </div>
     </fieldset>
@@ -55,6 +64,7 @@
     <fieldset>
         <legend>
             <h2>Itens de coleta</h2>
+            <span>Selecione um ou mais itens abaixo</span>
         </legend>
         <div class="items-grid">
             <li data-id="1">
