@@ -1,5 +1,3 @@
-/* configuração da responsividade */
-
 @media (max-width: 900px) {
     #page-home {
         background-position-x: 70vw;
@@ -16,6 +14,12 @@
     }
     #page-home main {
         align-items: center;
+    }
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .cards img {
+        height: 180px;
     }
 }
 
