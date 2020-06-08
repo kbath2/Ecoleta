@@ -1,50 +1,38 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.html" %}
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/search-results.css">
-        <link rel="stylesheet" href="/styles/responsive.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
-        <title>Resultado da Pesquisa</title>
-    </head>
+<!--Identação do Nunjunks-->
+{% set pageId = "page-search-results" %}
 
-    <body>
+<!--Identação do Nunjunks-->
+{% block styles %}
+<link rel="stylesheet" href="/styles/search-results.css"> {% endblock styles %}
 
-        <div id="page-search-results">
-            <header>
-                <img src="/img/logo.svg" alt="Logomarca Ecoleta">
-                <a href="/">
-                    <span></span> Voltar para a home
-                </a>
-            </header>
+<!--Identação do Nunjunks-->
+{% block title %}
+<title>Resultado da Pesquisa</title>
+{% endblock title %}
 
-            <main>
-                <h4>
-                    <strong> 2 pontos </strong> encontrados
-                </h4>
-                <div class="cards">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1550243055-66dabe4331e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Colectoria">
-                        <h1>Colectoria</h1>
-                        <h3>Risiduos Eletronicos, lampadas</h3>
-                        <p>Salvador, Bahia <br> Rua Jose Arigo, Narandiba <br> Nº 17b
-                        </p>
-                    </div>
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Papersider">
-                        <h1>Papersider</h1>
-                        <h3>Papeis e papelãos</h3>
-                        <p>Salvador, Bahia <br> Rua Jose Arigo, Narandiba <br> Nº 17b
-                        </p>
-                    </div>
-                </div>
-            </main>
-
-
+<!--Identação do Nunjunks-->
+{% block content %} {% include "partials/page-header.html" %}
+<main>
+    <h4>
+        <strong> 2 pontos </strong> encontrados
+    </h4>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550243055-66dabe4331e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Colectoria">
+            <h1>Colectoria</h1>
+            <h3>Risiduos Eletronicos, lampadas</h3>
+            <p>Salvador, Bahia <br> Rua Jose Arigo, Narandiba <br> Nº 17b
+            </p>
         </div>
-    </body>
-
-</html>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Papersider">
+            <h1>Papersider</h1>
+            <h3>Papeis e papelãos</h3>
+            <p>Salvador, Bahia <br> Rua Jose Arigo, Narandiba <br> Nº 17b
+            </p>
+        </div>
+    </div>
+</main>
+{% endblock content %}
