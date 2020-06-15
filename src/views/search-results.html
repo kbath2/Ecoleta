@@ -15,24 +15,32 @@
 <!--Identação do Nunjunks-->
 {% block content %} {% include "partials/page-header.html" %}
 <main>
+    {% if total > 0 %}
     <h4>
-        <strong> 2 pontos </strong> encontrados
+        <strong> {{total}} pontos </strong> encontrados
     </h4>
+
     <div class="cards">
+
+        {% for place in places %}
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1550243055-66dabe4331e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Colectoria">
-            <h1>Colectoria</h1>
-            <h3>Risiduos Eletronicos, lampadas</h3>
-            <p>Salvador, Bahia <br> Rua Jose Arigo, Narandiba <br> Nº 17b
+            <img src="{{ place.image }}" alt="{{ place.name }}">
+            <h1>{{ place.name }}</h1>
+            <h3>{{ place.items }}</h3>
+            <p>
+                {{ place.city }}, {{ place.state }}
+                <br> {{ place.address }}
+                <br> {{ place.address2 }}
             </p>
         </div>
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Papersider">
-            <h1>Papersider</h1>
-            <h3>Papeis e papelãos</h3>
-            <p>Salvador, Bahia <br> Rua Jose Arigo, Narandiba <br> Nº 17b
-            </p>
-        </div>
+
+        {% endfor %}
+
     </div>
+
+    {% else %}
+    <h4><strong>Nenhum</strong> local encontrado</h4>
+
+    {% endif %}
 </main>
 {% endblock content %}
