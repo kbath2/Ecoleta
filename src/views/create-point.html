@@ -1,18 +1,20 @@
 {% extends "layout.html" %}
 
-<!--Identação do Nunjunks-->
-{% set pageId = "page-create-point" %} {% block styles %}
-<link rel="stylesheet" href="/styles/create-point.css"> {% endblock styles %}
+{% set pageId = "page-create-point" %} 
 
-<!--Identação do Nunjunks-->
+{% block styles %}
+<link rel="stylesheet" href="/styles/create-point.css">
+<link rel="stylesheet" href="/styles/modal.css"> 
+{% endblock styles %}
+
 {% block title %}
 <title>Criar um ponto de coleta</title>
 {% endblock title %}
 
-<!--Identação do Nunjunks-->
 {% block content %}
-<!--Identação do Nunjunks-->
+
 {% include "partials/page-header.html" %}
+
 <form action="/savepoint" method="POST">
     <h1>Cadastro do ponto de coleta</h1>
     <fieldset>
@@ -96,9 +98,18 @@
     </fieldset>
     <button type="submit">Cadastra ponto de coleta</button>
 </form>
+
 {% endblock content %}
 
-<!--Identação do Nunjunks-->
+
+{% block modal %}
+
+{% if saved %} 
+{% include "partials/point-created.html" %} 
+{% endif %}
+
+{% endblock modal %}
+
 {% block scripts %}
 <script src="/js/create-point.js"></script>
 {% endblock scripts %}

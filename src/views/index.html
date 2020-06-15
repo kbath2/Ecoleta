@@ -1,14 +1,11 @@
 {% extends "layout.html" %}
 
-<!--Identação do Nunjunks-->
 {% set pageId = "page-home" %}
 
-<!--Identação do Nunjunks-->
 {% block styles %}
 <link rel="stylesheet" href="/styles/home.css">
 <link rel="stylesheet" href="/styles/modal.css"> {% endblock styles %}
 
-<!--Identação do Nunjunks-->
 {% block content %}
 <div class="content">
     <header>
@@ -28,11 +25,10 @@
 </div>
 {% endblock content %}
 
+{% block modal %} 
+{% include "partials/modal.html" %} 
+{% endblock modal %} 
 
-<!--Identação do Nunjunks-->
-{% block modal %} {% include "partials/modal.html" %} {% endblock modal %}
-
-<!--Identação do Nunjunks-->
 {% block scripts %}
 <script src="/js/index.js"></script>
 {% endblock scripts %}

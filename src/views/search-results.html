@@ -1,18 +1,15 @@
 {% extends "layout.html" %}
 
-<!--Identação do Nunjunks-->
 {% set pageId = "page-search-results" %}
 
-<!--Identação do Nunjunks-->
 {% block styles %}
-<link rel="stylesheet" href="/styles/search-results.css"> {% endblock styles %}
+<link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
 
-<!--Identação do Nunjunks-->
 {% block title %}
 <title>Resultado da Pesquisa</title>
 {% endblock title %}
 
-<!--Identação do Nunjunks-->
 {% block content %} {% include "partials/page-header.html" %}
 <main>
     {% if total > 0 %}
@@ -28,9 +25,10 @@
             <h1>{{ place.name }}</h1>
             <h3>{{ place.items }}</h3>
             <p>
-                {{ place.city }}, {{ place.state }}
-                <br> {{ place.address }}
-                <br> {{ place.address2 }}
+                {{ place.address }}, {{ place.address2 }}
+                <br>
+                {{ place.city }}, {{ place.state }} 
+                <br> 
             </p>
         </div>
 
