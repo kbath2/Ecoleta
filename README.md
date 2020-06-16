@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### :man_technologist:&nbsp;&nbsp;  Demo Web
 
-[Acesse o site](https://ialexanderbrito.com.br/)
+Em construção...
 
 <br>
 
