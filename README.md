@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### :man_technologist:&nbsp;&nbsp;  Demo Web
 
-Em construção...
+* [Acesse o site](https://ecoleta-ssa.herokuapp.com/)
 
 <br>
 
