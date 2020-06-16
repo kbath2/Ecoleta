@@ -4,7 +4,7 @@
     "description": "Sistema de cadastro de coletas de materias reutilizaveis",
     "main": "src/server.js",
     "scripts": {
-        "start": "node src/server.js"
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",

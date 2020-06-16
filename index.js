@@ -1,6 +1,6 @@
 const express = require("express")
 const server = express()
-const db = require("./database/db")
+const db = require("./src/database/db")
 
 // configuração da pasta publica
 server.use(express.static("public"))
@@ -88,6 +88,7 @@ server.get("/search", (req, res) => {
 
 
 //Ligar o servidor
-server.listen(3000, () => {
+let porta = process.env.PORT || 3000;
+server.listen(porta, () => {
     console.log("Servidor Ok");
 })
