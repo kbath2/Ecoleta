@@ -85,7 +85,7 @@ Este projeto foi desenvolvimento durante a Next Level Week, um evento da [Rocket
 
 ### :memo:&nbsp;&nbsp; Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/kbath2/Ecoleta/blob/master/LICENSE) para mais detalhes.
 
 
 ### 📱 Social
